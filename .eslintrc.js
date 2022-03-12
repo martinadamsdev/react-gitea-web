@@ -12,7 +12,6 @@ module.exports = {
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'prettier',
     'plugin:react/jsx-runtime',
-    'plugin:react-hooks/recommended',
     'plugin:jest/recommended',
     'plugin:eslint-comments/recommended',
   ],

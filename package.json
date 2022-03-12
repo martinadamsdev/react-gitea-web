@@ -8,29 +8,40 @@
     "lint:fix": "eslint ./src --ext .jsx,.js,.ts,.tsx --quiet --fix --ignore-path ./.gitignore",
     "lint:format": "prettier  --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" ",
     "lint": "pnpm lint:format && pnpm lint:fix ",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "test:e2e": "vite | cypress open"
   },
   "dependencies": {
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-query": "^3.34.16",
+    "react-router": "^6.2.2",
+    "styled-components": "^5.3.3",
+    "recoil": "^0.6.1"
   },
   "devDependencies": {
-    "@types/react": "^17.0.38",
-    "@types/react-dom": "^17.0.11",
-    "@typescript-eslint/eslint-plugin": "^5.10.1",
-    "@typescript-eslint/parser": "^5.10.1",
-    "@vitejs/plugin-react": "^1.1.4",
-    "eslint": "^8.8.0",
-    "eslint-config-prettier": "^8.3.0",
+    "@cypress/code-coverage": "^3.9.12",
+    "@cypress/react": "^5.12.4",
+    "@cypress/vite-dev-server": "^2.2.2",
+    "@testing-library/cypress": "^8.0.2",
+    "@types/jest": "^27.4.1",
+    "@types/react": "^17.0.40",
+    "@types/react-dom": "^17.0.13",
+    "@typescript-eslint/eslint-plugin": "^5.14.0",
+    "@typescript-eslint/parser": "^5.14.0",
+    "@vitejs/plugin-react": "^1.2.0",
+    "cypress": "^9.5.1",
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
-    "eslint-plugin-jest": "^26.0.0",
-    "eslint-plugin-react": "^7.28.0",
-    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-jest": "^26.1.1",
+    "eslint-plugin-react": "^7.29.3",
     "eslint-plugin-simple-import-sort": "^7.0.0",
-    "jest": "^27.4.7",
+    "jest": "^27.5.1",
+    "mocha": "^9.2.2",
     "prettier": "^2.5.1",
-    "typescript": "^4.5.5",
-    "vite": "^2.7.13"
+    "typescript": "^4.6.2",
+    "vite": "^2.8.6"
   },
   "engines": {
     "node": ">=14"

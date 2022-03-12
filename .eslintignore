@@ -4,3 +4,5 @@ node_modules
 dist
 .eslintrc.js
 vite.config.ts
+cypress
+tests/**/*.ts
